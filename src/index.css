@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #777777;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* react-tooltip library styles override */
+
+.__react_component_tooltip.show {
+    opacity: 0.64 !important;
+}
+
+.isOpen {
+    position: fixed;
+    z-index: 8;
+    transform: translateX(0);
+    width: 400px;
+    height: 100%;
+    box-shadow: 0 8px 24px -16px rgba(170, 170, 170, 0.48);
+    /*transition: transform 0.6s ease;*/
+}
+
+.isOpen .vertical {
+    display: none;
+}
+
+.isClose .horizontal {
+    display: none;
+}
+
+.isClose {
+    position: fixed;
+    z-index: 1;
+    transform: translateX(calc(-100% + 63px));
+    width: 64px;
+    height: 100%;
+    box-shadow: 0 8px 24px -16px rgba(170, 170, 170, 0.48);
+    /*transition: transform 0.6s ease;*/
+}
+
+.openSideMenu {
+    width: 100%;
+    padding: 0 0 0 400px;
+    max-width: 100% !important;
+}
+
+.openSideMenu main {
+    padding: 0 50px 0 50px;
+}
+
+.closedSideMenu {
+    padding: 0 0 0 50px;
+    width: 100%;
+}
+
+.closedSideMenu main {
+    padding: 0 50px 0 120px;
+}
+
+
+/* --- Animate List Container */
+
+header+div {
+    margin-left: 88px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3ecefe;
+    border-color: #01befe;
+}
+
+a {
+    color: #0069d9;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #f9f9f9;
+    border-color: #dee2e6 #dee2e6 #f9f9f9;
+}

@@ -1,0 +1,23 @@
+.updateButton {
+    color: #fff;
+    background-color: #35477d;
+    border-color: #35477d;
+}
+
+.updateButton:hover {
+    color: #eee;
+    background-color: #35477d;
+    border-color: #35477d;
+}
+
+.deleteButton {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+}
+
+.deleteButton:hover {
+    color: #eee;
+    background-color: red;
+    border-color: red;
+}

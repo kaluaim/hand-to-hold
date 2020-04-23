@@ -1,0 +1,39 @@
+.root {
+    height: 60px;
+    border-radius: 21px;
+    margin-bottom: 30px;
+    padding: 19px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #35477d;
+    background-color: #eee;
+}
+
+.root:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+
+.selected {
+    border: 1px solid #f67280;
+}
+
+.selected:hover {
+    background-color: #eee !important;
+    color: #35477d !important;
+}
+
+.selected:hover .name {
+    color: #35477d !important;
+}

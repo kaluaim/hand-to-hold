@@ -1,0 +1,84 @@
+.root {
+    min-height: 100vh;
+    min-width: 100%;
+    border-top: 5px solid #f67280;
+}
+
+.rootContent {
+    background-color: #eee;
+}
+
+.logo {
+    background: url('../../assets/images/logos/logo.svg') no-repeat center center;
+    width: 210px;
+    height: 210px;
+    object-fit: unset;
+    margin: 20px auto;
+    background-size: 208px;
+}
+
+.formWrapper {
+    width: 384px;
+}
+
+.formWrapper .form .formInputWrapper {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.formWrapper .form .formInputWrapper .inputWrapper .formInput {
+    width: 100%;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 1rem;
+    border: solid 1px #bbb;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 250ms;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333;
+}
+
+.formInput::placeholder {
+    color: #333;
+}
+
+.submitBtn {
+    color: #f67280;
+    margin-top: 22px;
+    height: 42px;
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #f67280 !important;
+    display: inline-block;
+    border-radius: 42px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    transition: opacity 0.2s;
+}
+
+.submitBtn:focus {
+    outline: none;
+}
+
+.submitBtn:hover {
+    opacity: 0.9;
+}
+
+:disabled {
+    opacity: 0.5;
+}
+
+*:hover:disabled {
+    opacity: 0.5;
+}
+
+.red {
+    color: red;
+}
