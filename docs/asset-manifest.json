@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/hand-to-hold/static/css/main.e727eb5e.chunk.css",
-    "main.js": "/hand-to-hold/static/js/main.e26e4f93.chunk.js",
-    "main.js.map": "/hand-to-hold/static/js/main.e26e4f93.chunk.js.map",
+    "main.css": "/hand-to-hold/static/css/main.6d429832.chunk.css",
+    "main.js": "/hand-to-hold/static/js/main.74b0a941.chunk.js",
+    "main.js.map": "/hand-to-hold/static/js/main.74b0a941.chunk.js.map",
     "runtime-main.js": "/hand-to-hold/static/js/runtime-main.dd7626fe.js",
     "runtime-main.js.map": "/hand-to-hold/static/js/runtime-main.dd7626fe.js.map",
     "static/css/2.47e06e2e.chunk.css": "/hand-to-hold/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.4af73825.chunk.js": "/hand-to-hold/static/js/2.4af73825.chunk.js",
-    "static/js/2.4af73825.chunk.js.map": "/hand-to-hold/static/js/2.4af73825.chunk.js.map",
+    "static/js/2.46c00adc.chunk.js": "/hand-to-hold/static/js/2.46c00adc.chunk.js",
+    "static/js/2.46c00adc.chunk.js.map": "/hand-to-hold/static/js/2.46c00adc.chunk.js.map",
     "index.html": "/hand-to-hold/index.html",
-    "precache-manifest.a9c9b6259c2e7966f0cd71c11e78e6aa.js": "/hand-to-hold/precache-manifest.a9c9b6259c2e7966f0cd71c11e78e6aa.js",
+    "precache-manifest.699724b085dc1841d46ad55dd9bc95af.js": "/hand-to-hold/precache-manifest.699724b085dc1841d46ad55dd9bc95af.js",
     "service-worker.js": "/hand-to-hold/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/hand-to-hold/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.e727eb5e.chunk.css.map": "/hand-to-hold/static/css/main.e727eb5e.chunk.css.map",
-    "static/js/2.4af73825.chunk.js.LICENSE.txt": "/hand-to-hold/static/js/2.4af73825.chunk.js.LICENSE.txt",
+    "static/css/main.6d429832.chunk.css.map": "/hand-to-hold/static/css/main.6d429832.chunk.css.map",
+    "static/js/2.46c00adc.chunk.js.LICENSE.txt": "/hand-to-hold/static/js/2.46c00adc.chunk.js.LICENSE.txt",
     "static/media/Menu.module.css": "/hand-to-hold/static/media/my-profile.924e05d6.svg",
     "static/media/Login.module.css": "/hand-to-hold/static/media/logo.b3fd9cf3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dd7626fe.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.4af73825.chunk.js",
-    "static/css/main.e727eb5e.chunk.css",
-    "static/js/main.e26e4f93.chunk.js"
+    "static/js/2.46c00adc.chunk.js",
+    "static/css/main.6d429832.chunk.css",
+    "static/js/main.74b0a941.chunk.js"
   ]
 }
