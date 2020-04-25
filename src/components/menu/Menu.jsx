@@ -50,7 +50,7 @@ const Menu = props => {
     )
 
 
-    let currentMenuItems = [dashboardMenuItem, profileMenuItem]
+    let currentMenuItems = [dashboardMenuItem]
 
     return showMenu
     ?   <header className={styles.root}>

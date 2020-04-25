@@ -8,6 +8,13 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
+/**
+ * Remove console output in prod
+ */
+if (process.env.REACT_APP_STAGE === 'prod') {
+    console.log = () => {};
+}
+
 ReactDOM.render( < App / > , document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change

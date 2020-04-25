@@ -1,3 +1,16 @@
+.header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #35477d;
+    padding: 24px 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 21px 21px 0 0;
+    background-color: #eee;
+}
+
 .formWrapper {
     width: 384px;
 }

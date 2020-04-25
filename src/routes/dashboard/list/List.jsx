@@ -53,7 +53,9 @@ class List extends Component {
         this.setState({ isCreateCircleOpen: false })
     }
 
-    handleCreateCreateCircle = async (name, clear) => {
+    handleCreateCreateCircle = async (e, name, clear) => {
+        e.preventDefault()
+
         console.log('handleCreateCreateCircle:')
         console.log(name)
 

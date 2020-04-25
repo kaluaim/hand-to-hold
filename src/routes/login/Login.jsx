@@ -22,7 +22,8 @@ class Login extends Component {
 
     numReg = new RegExp('\\d')
 
-    handleSubmit = async () => {
+    handleSubmit = async e => {
+        e.preventDefault()
         console.log(this.state.phone)
         // disable UI and show spanner
         this.setState({
@@ -65,7 +66,8 @@ class Login extends Component {
         }
     }
 
-    handleVerifyOTP = async () => {
+    handleVerifyOTP = async e => {
+        e.preventDefault()
 
         this.setState({
             isUIDisabled: true,
@@ -142,41 +144,42 @@ class Login extends Component {
                                                 </div>
                                             </div>
 
-
-                                            <div className={cs(styles.formInputWrapper)}>
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <div className={styles.inputWrapper}>
-                                                            <input
-                                                                name="phone"
-                                                                type="text"
-                                                                value={this.state.phone}
-                                                                onChange={this.handleChange}
-                                                                placeholder={'phone number...'}
-                                                                className={styles.formInput}
-                                                                maxLength="500"
-                                                                disabled={this.state.isUIDisabled}
-                                                            />
+                                            <form onSubmit={this.handleSubmit}>
+                                                <div className={cs(styles.formInputWrapper)}>
+                                                    <div className="row">
+                                                        <div className="col-12">
+                                                            <div className={styles.inputWrapper}>
+                                                                <input
+                                                                    name="phone"
+                                                                    type="text"
+                                                                    value={this.state.phone}
+                                                                    onChange={this.handleChange}
+                                                                    placeholder={'phone number...'}
+                                                                    className={styles.formInput}
+                                                                    maxLength="500"
+                                                                    disabled={this.state.isUIDisabled}
+                                                                />
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div className="btn-wrapper text-center">
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <button type="submit" onClick={this.handleSubmit} className={styles.submitBtn} disabled={this.state.isUIDisabled}>
-                                                            <span>
-                                                                {this.state.isLoading
-                                                                    ? <span className="spinner-border spinner-border-sm float-left mt-1" role="status" aria-hidden="true"></span>
-                                                                    : <></>
-                                                                }
-                                                                <span style={{ verticalAlign: 'text-top' }}>log in</span>
-                                                            </span>
-                                                        </button>
+                                                <div className="btn-wrapper text-center">
+                                                    <div className="row">
+                                                        <div className="col-12">
+                                                            <button type="submit" className={styles.submitBtn} disabled={this.state.isUIDisabled}>
+                                                                <span>
+                                                                    {this.state.isLoading
+                                                                        ? <span className="spinner-border spinner-border-sm float-left mt-1" role="status" aria-hidden="true"></span>
+                                                                        : <></>
+                                                                    }
+                                                                    <span style={{ verticalAlign: 'text-top' }}>log in</span>
+                                                                </span>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </form>
 
                                         </div>
                                     </div>

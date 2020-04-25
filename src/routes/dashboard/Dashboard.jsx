@@ -55,7 +55,9 @@ class Dashboard extends Component {
         this.setState({ isAddMemberOpen: false })
     }
 
-    handleAddMember = async (name, number, clear) => {
+    handleAddMember = async (e, name, number, clear) => {
+        e.preventDefault()
+        
         console.log('handleAddMember:')
         console.log(name)
         console.log(number)
@@ -118,7 +120,10 @@ class Dashboard extends Component {
                                         <button className={cs('btn', styles.addButton, 'mb-3')} onClick={this.openAddMember}><i className="fas fa-plus"></i> add member</button>
                                     </div>
                                     <div className="row">
-                                        <Table members={this.state.circle.members}/>
+                                        {this.state.circle.members.length === 0
+                                            ? <></>
+                                            : <Table members={this.state.circle.members}/>
+                                        }
                                     </div>
                                 </main>
                             }

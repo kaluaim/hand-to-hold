@@ -10,7 +10,7 @@ const UpdateMember = props => {
         modal: {
             background: '#fff',
             padding: 0,
-            borderRadius: '10px',
+            borderRadius: '21px',
             maxWidth: '500px',
             width: '100%',
             minHeight: '200px'
@@ -22,14 +22,15 @@ const UpdateMember = props => {
 
     return (
         <Modal open={open} onClose={onClose} center styles={styledModal}>
-            <div className="my-5 d-flex flex-column h-100">
+            <div className={cs(styles.header)}>edit member</div>
+            <div className="mb-5 d-flex flex-column h-100">
                 <div className="d-flex flex-column justify-content-center flex-grow-1">
                     <div className="row">
                         <div className="col-12">
                             <div className={cs(styles.formWrapper, 'mx-auto')}>
                                 <div className={styles.form}>
 
-                                    <div className="my-5 text-center">
+                                    <div className="mt-5 mb-1 text-center">
                                         <div className="row">
                                             <div className={cs('col-12', styles.red)}>
                                                 {errorMsg === ''
